@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Geot Publico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+</head>
+<body>
+    <div class="container">
+      <div th:if="${not #lists.isEmpty(clientes)}">
+          <h1>Lista de Clientes</h1>
+        <table class="highlight">
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Detalles</th>
+            </tr>
+            </thead>
+                <tbody>
+                    <tr th:each="cliente: ${clientes}">
+                        <td th:text="${cliente.getClienteId()}"></td>
+                        <td th:text="${cliente.getNombre()}"></td>
+                        <td th:text="${cliente.getApellido()}"></td>
+                        <td th:text="${cliente.getUsuario()}"></td>
+                        <td th:text="${cliente.getContrasena()}"></td>
+                        <td><a th:href="'cliente/' + ${cliente.getClienteId()}">Detalle</a></td>
+                    </tr>
+                </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+</html>

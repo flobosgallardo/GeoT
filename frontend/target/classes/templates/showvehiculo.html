@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Geot Publico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+</head>
+<body>
+<div class="container">
+    <h2>Chofer de <em th:text="${nombreCliente}"> </em></h2>
+    <a href="cliente">volver a lista de clientes</a>
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Patente</th>
+            <th>Tipo de Combustible</th>
+            <th>Tipo de cambio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${vehiculo.getVehiculoId()}"></td>
+            <td th:text="${vehiculo.getMarca()}"></td>
+            <td th:text="${vehiculo.getModelo()}"></td>
+            <td th:text="${vehiculo.getPatente()}"></td>
+            <td th:text="${vehiculo.getTipocombustible()}"></td>
+            <td th:text="${vehiculo.getTipodecambio()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,1026 @@
+2018-07-15 14:50:00.736  INFO 7724 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 7724 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 14:50:00.737  INFO 7724 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 14:50:00.878  INFO 7724 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24249edb: startup date [Sun Jul 15 14:50:00 CLT 2018]; root of context hierarchy
+2018-07-15 14:50:01.797  INFO 7724 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 14:50:01.803  INFO 7724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 14:50:01.804  INFO 7724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 14:50:01.852  INFO 7724 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 14:50:01.852  INFO 7724 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 977 ms
+2018-07-15 14:50:01.927  INFO 7724 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 14:50:01.929  INFO 7724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 14:50:01.930  INFO 7724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 14:50:01.930  INFO 7724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 14:50:01.930  INFO 7724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 14:50:02.130  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24249edb: startup date [Sun Jul 15 14:50:00 CLT 2018]; root of context hierarchy
+2018-07-15 14:50:02.162  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 14:50:02.163  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:50:02.165  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 14:50:02.165  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:50:02.165  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 14:50:02.165  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:50:02.167  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 14:50:02.167  INFO 7724 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 14:50:02.184  INFO 7724 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:50:02.184  INFO 7724 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:50:02.203  INFO 7724 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:50:02.346  INFO 7724 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 14:50:02.411  INFO 7724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 14:50:02.439  INFO 7724 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 14:50:02.470  INFO 7724 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 14:50:02.473  INFO 7724 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 1.94 seconds (JVM running for 2.402)
+2018-07-15 14:50:51.779  INFO 12748 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 12748 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 14:50:51.780  INFO 12748 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 14:50:51.933  INFO 12748 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d58cd11: startup date [Sun Jul 15 14:50:51 CLT 2018]; root of context hierarchy
+2018-07-15 14:50:52.863  INFO 12748 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 14:50:52.869  INFO 12748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 14:50:52.870  INFO 12748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 14:50:52.922  INFO 12748 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 14:50:52.922  INFO 12748 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 991 ms
+2018-07-15 14:50:53.000  INFO 12748 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 14:50:53.002  INFO 12748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 14:50:53.002  INFO 12748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 14:50:53.003  INFO 12748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 14:50:53.003  INFO 12748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 14:50:53.208  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d58cd11: startup date [Sun Jul 15 14:50:51 CLT 2018]; root of context hierarchy
+2018-07-15 14:50:53.239  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 14:50:53.240  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:50:53.242  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:50:53.242  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 14:50:53.242  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:50:53.242  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 14:50:53.244  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 14:50:53.244  INFO 12748 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 14:50:53.261  INFO 12748 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:50:53.261  INFO 12748 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:50:53.283  INFO 12748 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:50:53.432  INFO 12748 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 14:50:53.497  INFO 12748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 14:50:53.524  INFO 12748 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 14:50:53.554  INFO 12748 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 14:50:53.558  INFO 12748 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 1.981 seconds (JVM running for 2.586)
+2018-07-15 14:50:56.135  INFO 12748 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 14:50:56.136  INFO 12748 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 14:50:56.147  INFO 12748 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 14:51:43.112  INFO 8896 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 8896 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 14:51:43.113  INFO 8896 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 14:51:43.354  INFO 8896 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dcbc1df: startup date [Sun Jul 15 14:51:43 CLT 2018]; root of context hierarchy
+2018-07-15 14:51:44.350  INFO 8896 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 14:51:44.357  INFO 8896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 14:51:44.358  INFO 8896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 14:51:44.411  INFO 8896 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 14:51:44.411  INFO 8896 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1060 ms
+2018-07-15 14:51:44.491  INFO 8896 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 14:51:44.493  INFO 8896 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 14:51:44.493  INFO 8896 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 14:51:44.493  INFO 8896 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 14:51:44.493  INFO 8896 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 14:51:44.704  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dcbc1df: startup date [Sun Jul 15 14:51:43 CLT 2018]; root of context hierarchy
+2018-07-15 14:51:44.736  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:51:44.737  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 14:51:44.738  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:51:44.739  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 14:51:44.739  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 14:51:44.739  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 14:51:44.740  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 14:51:44.741  INFO 8896 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 14:51:44.758  INFO 8896 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:51:44.758  INFO 8896 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:51:44.780  INFO 8896 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 14:51:44.919  INFO 8896 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 14:51:44.985  INFO 8896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 14:51:45.013  INFO 8896 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 14:51:45.041  INFO 8896 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 14:51:45.044  INFO 8896 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.224 seconds (JVM running for 2.767)
+2018-07-15 14:51:47.391  INFO 8896 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 14:51:47.392  INFO 8896 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 14:51:47.402  INFO 8896 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-07-15 14:53:11.019 ERROR 8896 --- [http-nio-80-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 null] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:81) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:287) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at getCelular(RestCelularService.java:32) ~[classes/:na]
+	at com.ruyo.geotclient.controller.CelularController.getByOne(CelularController.java:31) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2018-07-15 15:02:13.948  INFO 11612 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 11612 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:02:13.949  INFO 11612 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:02:14.106  INFO 11612 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af60f43: startup date [Sun Jul 15 15:02:14 CLT 2018]; root of context hierarchy
+2018-07-15 15:02:15.082  INFO 11612 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:02:15.089  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:02:15.090  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:02:15.147  INFO 11612 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:02:15.147  INFO 11612 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1043 ms
+2018-07-15 15:02:15.240  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:02:15.242  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:02:15.243  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:02:15.243  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:02:15.243  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:02:15.468  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af60f43: startup date [Sun Jul 15 15:02:14 CLT 2018]; root of context hierarchy
+2018-07-15 15:02:15.510  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:02:15.511  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:02:15.512  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:02:15.513  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:02:15.513  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:02:15.514  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:02:15.515  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:02:15.516  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:02:15.538  INFO 11612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:02:15.538  INFO 11612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:02:15.561  INFO 11612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:02:15.708  INFO 11612 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:02:15.771  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:02:15.798  INFO 11612 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:02:15.827  INFO 11612 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:02:15.830  INFO 11612 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.075 seconds (JVM running for 2.554)
+2018-07-15 15:02:28.234  INFO 11612 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 15:02:28.235  INFO 11612 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 15:02:28.246  INFO 11612 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 15:06:17.633  INFO 11612 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af60f43: startup date [Sun Jul 15 15:02:14 CLT 2018]; root of context hierarchy
+2018-07-15 15:06:17.635  WARN 11612 --- [Thread-10] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-07-15 15:06:17.636  INFO 11612 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-15 15:06:17.905  INFO 11612 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 11612 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:06:17.906  INFO 11612 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:06:17.908  INFO 11612 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca6ec52: startup date [Sun Jul 15 15:06:17 CLT 2018]; root of context hierarchy
+2018-07-15 15:06:18.298  INFO 11612 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:06:18.299  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:06:18.299  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:06:18.314  INFO 11612 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:06:18.315  INFO 11612 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 406 ms
+2018-07-15 15:06:18.340  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:06:18.340  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:06:18.341  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:06:18.341  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:06:18.341  INFO 11612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:06:18.461  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca6ec52: startup date [Sun Jul 15 15:06:17 CLT 2018]; root of context hierarchy
+2018-07-15 15:06:18.468  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:06:18.469  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:06:18.471  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:06:18.471  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:06:18.472  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:06:18.472  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:06:18.475  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:06:18.476  INFO 11612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:06:18.484  INFO 11612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:06:18.484  INFO 11612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:06:18.498  INFO 11612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:06:18.513  INFO 11612 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:06:18.538  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:06:18.568  INFO 11612 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:06:18.577  INFO 11612 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:06:18.579  INFO 11612 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 0.704 seconds (JVM running for 245.303)
+2018-07-15 15:34:49.759  INFO 11740 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 11740 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:34:49.759  INFO 11740 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:34:49.909  INFO 11740 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b9317ab: startup date [Sun Jul 15 15:34:49 CLT 2018]; root of context hierarchy
+2018-07-15 15:34:50.772  INFO 11740 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:34:50.779  INFO 11740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:34:50.779  INFO 11740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:34:50.831  INFO 11740 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:34:50.832  INFO 11740 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 926 ms
+2018-07-15 15:34:50.914  INFO 11740 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:34:50.916  INFO 11740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:34:50.917  INFO 11740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:34:50.917  INFO 11740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:34:50.917  INFO 11740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:34:51.115  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b9317ab: startup date [Sun Jul 15 15:34:49 CLT 2018]; root of context hierarchy
+2018-07-15 15:34:51.147  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:34:51.148  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:34:51.149  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:34:51.149  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:34:51.150  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:34:51.150  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:34:51.151  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:34:51.152  INFO 11740 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:34:51.168  INFO 11740 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:34:51.168  INFO 11740 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:34:51.188  INFO 11740 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:34:51.328  INFO 11740 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:34:51.394  INFO 11740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:34:51.424  INFO 11740 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:34:51.453  INFO 11740 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:34:51.456  INFO 11740 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 1.976 seconds (JVM running for 2.614)
+2018-07-15 15:34:56.409  INFO 11740 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 15:34:56.409  INFO 11740 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 15:34:56.421  INFO 11740 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 15:43:52.125  INFO 3560 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 3560 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:43:52.126  INFO 3560 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:43:52.281  INFO 3560 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6718e02b: startup date [Sun Jul 15 15:43:52 CLT 2018]; root of context hierarchy
+2018-07-15 15:43:53.181  INFO 3560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:43:53.188  INFO 3560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:43:53.188  INFO 3560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:43:53.239  INFO 3560 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:43:53.239  INFO 3560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 961 ms
+2018-07-15 15:43:53.317  INFO 3560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:43:53.319  INFO 3560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:43:53.320  INFO 3560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:43:53.320  INFO 3560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:43:53.320  INFO 3560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:43:53.535  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6718e02b: startup date [Sun Jul 15 15:43:52 CLT 2018]; root of context hierarchy
+2018-07-15 15:43:53.576  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:43:53.577  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:43:53.578  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:43:53.579  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:43:53.579  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:43:53.579  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:43:53.581  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:43:53.582  INFO 3560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:43:53.601  INFO 3560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:43:53.602  INFO 3560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:43:53.625  INFO 3560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:43:53.776  INFO 3560 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:43:53.849  INFO 3560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:43:53.884  INFO 3560 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:43:53.916  INFO 3560 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:43:53.920  INFO 3560 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.018 seconds (JVM running for 2.643)
+2018-07-15 15:43:58.330  INFO 3560 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 15:43:58.331  INFO 3560 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 15:43:58.342  INFO 3560 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 15:47:00.732  INFO 8592 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 8592 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:47:00.734  INFO 8592 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:47:00.877  INFO 8592 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7912523d: startup date [Sun Jul 15 15:47:00 CLT 2018]; root of context hierarchy
+2018-07-15 15:47:01.731  INFO 8592 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:47:01.739  INFO 8592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:47:01.740  INFO 8592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:47:01.796  INFO 8592 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:47:01.797  INFO 8592 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 923 ms
+2018-07-15 15:47:01.890  INFO 8592 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:47:01.893  INFO 8592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:47:01.893  INFO 8592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:47:01.893  INFO 8592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:47:01.894  INFO 8592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:47:02.119  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7912523d: startup date [Sun Jul 15 15:47:00 CLT 2018]; root of context hierarchy
+2018-07-15 15:47:02.151  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:47:02.152  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:47:02.153  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:47:02.153  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:47:02.154  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:47:02.154  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:47:02.156  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:47:02.156  INFO 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:47:02.174  INFO 8592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:47:02.174  INFO 8592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:47:02.196  INFO 8592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:47:02.353  INFO 8592 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:47:02.418  INFO 8592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:47:02.446  INFO 8592 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:47:02.476  INFO 8592 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:47:02.479  INFO 8592 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 1.953 seconds (JVM running for 2.671)
+2018-07-15 15:47:21.462  INFO 8592 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 15:47:21.463  INFO 8592 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 15:47:21.476  INFO 8592 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-07-15 15:47:37.988  INFO 7764 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 7764 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:47:37.989  INFO 7764 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:47:38.162  INFO 7764 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 15:47:38 CLT 2018]; root of context hierarchy
+2018-07-15 15:47:39.024  INFO 7764 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:47:39.030  INFO 7764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:47:39.031  INFO 7764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:47:39.082  INFO 7764 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:47:39.082  INFO 7764 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 923 ms
+2018-07-15 15:47:39.168  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:47:39.170  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:47:39.170  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:47:39.170  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:47:39.170  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:47:39.394  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 15:47:38 CLT 2018]; root of context hierarchy
+2018-07-15 15:47:39.430  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:47:39.430  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:47:39.432  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:47:39.433  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:47:39.433  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:47:39.433  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:47:39.435  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:47:39.435  INFO 7764 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:47:39.455  INFO 7764 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:47:39.455  INFO 7764 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:47:39.479  INFO 7764 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:47:39.652  INFO 7764 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:47:39.726  INFO 7764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:47:39.757  INFO 7764 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:47:39.789  INFO 7764 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:47:39.793  INFO 7764 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.113 seconds (JVM running for 2.808)
+2018-07-15 15:47:41.422  INFO 7764 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 15:47:41.423  INFO 7764 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 15:47:41.434  INFO 7764 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 15:48:47.137  INFO 6692 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 6692 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:48:47.137  INFO 6692 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:48:47.308  INFO 6692 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 15:48:47 CLT 2018]; root of context hierarchy
+2018-07-15 15:48:48.413  INFO 6692 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:48:48.420  INFO 6692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:48:48.420  INFO 6692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:48:48.472  INFO 6692 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:48:48.472  INFO 6692 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1166 ms
+2018-07-15 15:48:48.556  INFO 6692 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:48:48.558  INFO 6692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:48:48.558  INFO 6692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:48:48.559  INFO 6692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:48:48.559  INFO 6692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:48:48.782  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 15:48:47 CLT 2018]; root of context hierarchy
+2018-07-15 15:48:48.814  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:48:48.815  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:48:48.817  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:48:48.817  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:48:48.817  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:48:48.817  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:48:48.819  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:48:48.819  INFO 6692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:48:48.840  INFO 6692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:48:48.840  INFO 6692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:48:48.866  INFO 6692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:48:49.043  INFO 6692 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:48:49.137  INFO 6692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:48:49.167  INFO 6692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:48:49.202  INFO 6692 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:48:49.205  INFO 6692 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.312 seconds (JVM running for 2.931)
+2018-07-15 15:48:51.032  INFO 6692 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 15:48:51.033  INFO 6692 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 15:48:51.046  INFO 6692 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-07-15 15:49:27.152  INFO 6908 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 6908 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:49:27.153  INFO 6908 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:49:27.301  INFO 6908 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 15:49:27 CLT 2018]; root of context hierarchy
+2018-07-15 15:49:28.096  INFO 6908 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:49:28.103  INFO 6908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:49:28.104  INFO 6908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:49:28.156  INFO 6908 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:49:28.157  INFO 6908 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 859 ms
+2018-07-15 15:49:28.236  INFO 6908 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:49:28.239  INFO 6908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:49:28.239  INFO 6908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:49:28.239  INFO 6908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:49:28.239  INFO 6908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:49:28.435  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 15:49:27 CLT 2018]; root of context hierarchy
+2018-07-15 15:49:28.466  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:49:28.467  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:49:28.468  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:49:28.468  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:49:28.469  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:49:28.469  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:49:28.471  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:49:28.471  INFO 6908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:49:28.488  INFO 6908 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:49:28.488  INFO 6908 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:49:28.507  INFO 6908 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:49:28.645  INFO 6908 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:49:28.710  INFO 6908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:49:28.738  INFO 6908 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:49:28.767  INFO 6908 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:49:28.770  INFO 6908 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 1.85 seconds (JVM running for 2.424)
+2018-07-15 15:49:33.319  INFO 9992 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 9992 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 15:49:33.320  INFO 9992 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 15:49:33.473  INFO 9992 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b9317ab: startup date [Sun Jul 15 15:49:33 CLT 2018]; root of context hierarchy
+2018-07-15 15:49:34.374  INFO 9992 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 15:49:34.382  INFO 9992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 15:49:34.382  INFO 9992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 15:49:34.439  INFO 9992 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 15:49:34.439  INFO 9992 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 969 ms
+2018-07-15 15:49:34.522  INFO 9992 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 15:49:34.524  INFO 9992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 15:49:34.524  INFO 9992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 15:49:34.524  INFO 9992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 15:49:34.524  INFO 9992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 15:49:34.744  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b9317ab: startup date [Sun Jul 15 15:49:33 CLT 2018]; root of context hierarchy
+2018-07-15 15:49:34.779  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:49:34.780  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 15:49:34.781  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:49:34.782  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:49:34.782  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 15:49:34.782  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 15:49:34.784  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 15:49:34.784  INFO 9992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 15:49:34.801  INFO 9992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:49:34.802  INFO 9992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:49:34.823  INFO 9992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 15:49:34.973  INFO 9992 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 15:49:35.044  INFO 9992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 15:49:35.079  INFO 9992 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 15:49:35.115  INFO 9992 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 15:49:35.118  INFO 9992 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.051 seconds (JVM running for 2.642)
+2018-07-15 15:49:35.680  INFO 9992 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 15:49:35.681  INFO 9992 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 15:49:35.694  INFO 9992 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-07-15 16:10:26.681  INFO 7316 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 7316 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 16:10:26.683  INFO 7316 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 16:10:26.827  INFO 7316 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bd5393d: startup date [Sun Jul 15 16:10:26 CLT 2018]; root of context hierarchy
+2018-07-15 16:10:27.709  INFO 7316 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 16:10:27.715  INFO 7316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 16:10:27.716  INFO 7316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 16:10:27.766  INFO 7316 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 16:10:27.766  INFO 7316 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 941 ms
+2018-07-15 16:10:27.845  INFO 7316 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 16:10:27.847  INFO 7316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 16:10:27.847  INFO 7316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 16:10:27.847  INFO 7316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 16:10:27.847  INFO 7316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 16:10:28.057  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bd5393d: startup date [Sun Jul 15 16:10:26 CLT 2018]; root of context hierarchy
+2018-07-15 16:10:28.091  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:10:28.092  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 16:10:28.094  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:10:28.094  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:10:28.094  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:10:28.094  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:10:28.096  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 16:10:28.096  INFO 7316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 16:10:28.113  INFO 7316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:10:28.113  INFO 7316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:10:28.135  INFO 7316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:10:28.296  INFO 7316 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 16:10:28.373  INFO 7316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 16:10:28.401  INFO 7316 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 16:10:28.432  INFO 7316 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 16:10:28.435  INFO 7316 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 1.96 seconds (JVM running for 2.426)
+2018-07-15 16:10:30.426  INFO 7316 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 16:10:30.427  INFO 7316 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 16:10:30.438  INFO 7316 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 16:10:56.245  INFO 6408 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 6408 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 16:10:56.246  INFO 6408 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 16:10:56.397  INFO 6408 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 16:10:56 CLT 2018]; root of context hierarchy
+2018-07-15 16:10:57.251  INFO 6408 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 16:10:57.258  INFO 6408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 16:10:57.258  INFO 6408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 16:10:57.309  INFO 6408 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 16:10:57.309  INFO 6408 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 914 ms
+2018-07-15 16:10:57.389  INFO 6408 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 16:10:57.391  INFO 6408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 16:10:57.392  INFO 6408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 16:10:57.392  INFO 6408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 16:10:57.392  INFO 6408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 16:10:57.586  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 16:10:56 CLT 2018]; root of context hierarchy
+2018-07-15 16:10:57.617  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:10:57.618  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 16:10:57.619  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:10:57.620  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:10:57.620  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:10:57.620  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:10:57.622  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 16:10:57.622  INFO 6408 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 16:10:57.638  INFO 6408 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:10:57.638  INFO 6408 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:10:57.659  INFO 6408 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:10:57.799  INFO 6408 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 16:10:57.872  INFO 6408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 16:10:57.905  INFO 6408 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 16:10:57.936  INFO 6408 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 16:10:57.939  INFO 6408 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 1.952 seconds (JVM running for 2.588)
+2018-07-15 16:10:58.518  INFO 6408 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 16:10:58.519  INFO 6408 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 16:10:58.530  INFO 6408 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 16:25:21.208  INFO 2112 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 2112 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 16:25:21.209  INFO 2112 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 16:25:21.403  INFO 2112 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a76eb26: startup date [Sun Jul 15 16:25:21 CLT 2018]; root of context hierarchy
+2018-07-15 16:25:22.297  INFO 2112 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 16:25:22.304  INFO 2112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 16:25:22.304  INFO 2112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 16:25:22.354  INFO 2112 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 16:25:22.354  INFO 2112 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 954 ms
+2018-07-15 16:25:22.430  INFO 2112 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 16:25:22.433  INFO 2112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 16:25:22.433  INFO 2112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 16:25:22.433  INFO 2112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 16:25:22.433  INFO 2112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 16:25:22.631  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a76eb26: startup date [Sun Jul 15 16:25:21 CLT 2018]; root of context hierarchy
+2018-07-15 16:25:22.662  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 16:25:22.663  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:25:22.664  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:25:22.664  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getChoferes(org.springframework.ui.Model)
+2018-07-15 16:25:22.665  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:25:22.665  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:25:22.666  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:25:22.666  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:25:22.667  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 16:25:22.667  INFO 2112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 16:25:22.684  INFO 2112 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:25:22.684  INFO 2112 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:25:22.703  INFO 2112 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:25:22.843  INFO 2112 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 16:25:22.909  INFO 2112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 16:25:22.943  INFO 2112 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 16:25:22.975  INFO 2112 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 16:25:22.978  INFO 2112 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.01 seconds (JVM running for 2.474)
+2018-07-15 16:25:25.373  INFO 2112 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 16:25:25.374  INFO 2112 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 16:25:25.384  INFO 2112 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-07-15 16:25:29.596 ERROR 2112 --- [http-nio-80-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException: 404 null] with root cause
+
+org.springframework.web.client.HttpClientErrorException: 404 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:78) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:287) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at getEmpresa(RestEmpresaService.java:30) ~[classes/:na]
+	at com.ruyo.geotclient.controller.EmpresaController.getByOne(EmpresaController.java:30) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2018-07-15 16:26:36.675 ERROR 2112 --- [http-nio-80-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException: 404 null] with root cause
+
+org.springframework.web.client.HttpClientErrorException: 404 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:78) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:287) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at getEmpresa(RestEmpresaService.java:30) ~[classes/:na]
+	at com.ruyo.geotclient.controller.EmpresaController.getByOne(EmpresaController.java:30) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2018-07-15 16:26:44.983 ERROR 2112 --- [http-nio-80-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException: 404 null] with root cause
+
+org.springframework.web.client.HttpClientErrorException: 404 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:78) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:287) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at getEmpresa(RestEmpresaService.java:30) ~[classes/:na]
+	at com.ruyo.geotclient.controller.EmpresaController.getByOne(EmpresaController.java:30) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2018-07-15 16:27:28.227  INFO 3504 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 3504 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 16:27:28.228  INFO 3504 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 16:27:28.443  INFO 3504 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a76eb26: startup date [Sun Jul 15 16:27:28 CLT 2018]; root of context hierarchy
+2018-07-15 16:27:29.418  INFO 3504 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 16:27:29.425  INFO 3504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 16:27:29.426  INFO 3504 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 16:27:29.477  INFO 3504 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 16:27:29.477  INFO 3504 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1038 ms
+2018-07-15 16:27:29.568  INFO 3504 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 16:27:29.570  INFO 3504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 16:27:29.571  INFO 3504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 16:27:29.571  INFO 3504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 16:27:29.571  INFO 3504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 16:27:29.768  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a76eb26: startup date [Sun Jul 15 16:27:28 CLT 2018]; root of context hierarchy
+2018-07-15 16:27:29.801  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 16:27:29.802  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:27:29.803  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getChoferes(org.springframework.ui.Model)
+2018-07-15 16:27:29.804  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:27:29.804  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:27:29.804  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:27:29.805  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 16:27:29.805  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 16:27:29.806  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 16:27:29.807  INFO 3504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 16:27:29.825  INFO 3504 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:27:29.826  INFO 3504 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:27:29.844  INFO 3504 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 16:27:30.008  INFO 3504 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 16:27:30.082  INFO 3504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 16:27:30.118  INFO 3504 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 16:27:30.150  INFO 3504 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 16:27:30.153  INFO 3504 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.18 seconds (JVM running for 2.655)
+2018-07-15 16:27:31.161  INFO 3504 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 16:27:31.161  INFO 3504 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 16:27:31.172  INFO 3504 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 19:10:54.794  INFO 7056 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 7056 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 19:10:54.795  INFO 7056 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 19:10:54.930  INFO 7056 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af60f43: startup date [Sun Jul 15 19:10:54 CLT 2018]; root of context hierarchy
+2018-07-15 19:10:55.794  INFO 7056 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 19:10:55.801  INFO 7056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 19:10:55.801  INFO 7056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 19:10:55.850  INFO 7056 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 19:10:55.850  INFO 7056 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 922 ms
+2018-07-15 19:10:55.934  INFO 7056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 19:10:55.936  INFO 7056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 19:10:55.936  INFO 7056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 19:10:55.936  INFO 7056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 19:10:55.936  INFO 7056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 19:10:56.139  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af60f43: startup date [Sun Jul 15 19:10:54 CLT 2018]; root of context hierarchy
+2018-07-15 19:10:56.173  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 19:10:56.173  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:10:56.174  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:10:56.174  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getChoferes(org.springframework.ui.Model)
+2018-07-15 19:10:56.175  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:10:56.175  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clientes],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:10:56.176  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:10:56.176  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresas],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:10:56.176  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculos],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model)
+2018-07-15 19:10:56.176  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:10:56.177  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRoles(org.springframework.ui.Model)
+2018-07-15 19:10:56.177  INFO 7056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRol(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:10:56.179  WARN 7056 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'vehiculoController' method 
+public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculos(org.springframework.ui.Model)
+to {[/vehiculos],methods=[GET]}: There is already 'gpsController' bean method
+public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model) mapped.
+2018-07-15 19:10:56.181  INFO 7056 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-15 19:10:56.190  INFO 7056 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-15 19:10:56.197 ERROR 7056 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'vehiculoController' method 
+public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculos(org.springframework.ui.Model)
+to {[/vehiculos],methods=[GET]}: There is already 'gpsController' bean method
+public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at com.ruyo.geotclient.GeotClientApplication.main(GeotClientApplication.java:24) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'vehiculoController' method 
+public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculos(org.springframework.ui.Model)
+to {[/vehiculos],methods=[GET]}: There is already 'gpsController' bean method
+public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 21 common frames omitted
+
+2018-07-15 19:11:54.214  INFO 6772 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 6772 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 19:11:54.215  INFO 6772 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 19:11:54.403  INFO 6772 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b63c7c0: startup date [Sun Jul 15 19:11:54 CLT 2018]; root of context hierarchy
+2018-07-15 19:11:55.287  INFO 6772 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 19:11:55.294  INFO 6772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 19:11:55.294  INFO 6772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 19:11:55.343  INFO 6772 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 19:11:55.344  INFO 6772 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 945 ms
+2018-07-15 19:11:55.430  INFO 6772 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 19:11:55.432  INFO 6772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 19:11:55.432  INFO 6772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 19:11:55.432  INFO 6772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 19:11:55.432  INFO 6772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 19:11:55.642  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b63c7c0: startup date [Sun Jul 15 19:11:54 CLT 2018]; root of context hierarchy
+2018-07-15 19:11:55.677  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 19:11:55.677  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:11:55.678  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getChoferes(org.springframework.ui.Model)
+2018-07-15 19:11:55.679  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:11:55.679  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:11:55.679  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:11:55.679  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:11:55.680  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:11:55.680  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model)
+2018-07-15 19:11:55.680  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:11:55.682  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRoles(org.springframework.ui.Model)
+2018-07-15 19:11:55.682  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRol(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:11:55.682  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculos(org.springframework.ui.Model)
+2018-07-15 19:11:55.682  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:11:55.684  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 19:11:55.684  INFO 6772 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 19:11:55.700  INFO 6772 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:11:55.700  INFO 6772 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:11:55.721  INFO 6772 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:11:55.864  INFO 6772 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 19:11:55.930  INFO 6772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 19:11:55.960  INFO 6772 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 19:11:55.993  INFO 6772 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 19:11:55.996  INFO 6772 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.049 seconds (JVM running for 2.518)
+2018-07-15 19:12:39.369  INFO 6772 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 19:12:39.370  INFO 6772 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 19:12:39.381  INFO 6772 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-07-15 19:13:36.424  INFO 12324 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 12324 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 19:13:36.425  INFO 12324 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 19:13:36.604  INFO 12324 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a2476f5: startup date [Sun Jul 15 19:13:36 CLT 2018]; root of context hierarchy
+2018-07-15 19:13:37.531  INFO 12324 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 19:13:37.537  INFO 12324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 19:13:37.538  INFO 12324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 19:13:37.588  INFO 12324 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 19:13:37.589  INFO 12324 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 986 ms
+2018-07-15 19:13:37.672  INFO 12324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 19:13:37.674  INFO 12324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 19:13:37.674  INFO 12324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 19:13:37.674  INFO 12324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 19:13:37.675  INFO 12324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 19:13:37.874  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a2476f5: startup date [Sun Jul 15 19:13:36 CLT 2018]; root of context hierarchy
+2018-07-15 19:13:37.910  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 19:13:37.911  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:13:37.912  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:13:37.912  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getChoferes(org.springframework.ui.Model)
+2018-07-15 19:13:37.913  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:13:37.913  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:13:37.913  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:13:37.914  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:13:37.914  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:13:37.914  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model)
+2018-07-15 19:13:37.915  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRol(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:13:37.915  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRoles(org.springframework.ui.Model)
+2018-07-15 19:13:37.916  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:13:37.916  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculos(org.springframework.ui.Model)
+2018-07-15 19:13:37.917  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 19:13:37.918  INFO 12324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 19:13:37.935  INFO 12324 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:13:37.935  INFO 12324 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:13:37.955  INFO 12324 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:13:38.097  INFO 12324 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 19:13:38.165  INFO 12324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 19:13:38.194  INFO 12324 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 19:13:38.223  INFO 12324 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 19:13:38.227  INFO 12324 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.082 seconds (JVM running for 2.527)
+2018-07-15 19:13:39.347  INFO 12324 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 19:13:39.348  INFO 12324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 19:13:39.359  INFO 12324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-15 19:14:39.483  INFO 4580 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 4580 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 19:14:39.485  INFO 4580 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 19:14:39.644  INFO 4580 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b63c7c0: startup date [Sun Jul 15 19:14:39 CLT 2018]; root of context hierarchy
+2018-07-15 19:14:40.608  INFO 4580 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 19:14:40.614  INFO 4580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 19:14:40.615  INFO 4580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 19:14:40.665  INFO 4580 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 19:14:40.666  INFO 4580 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1024 ms
+2018-07-15 19:14:40.750  INFO 4580 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 19:14:40.752  INFO 4580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 19:14:40.753  INFO 4580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 19:14:40.753  INFO 4580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 19:14:40.753  INFO 4580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 19:14:40.953  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b63c7c0: startup date [Sun Jul 15 19:14:39 CLT 2018]; root of context hierarchy
+2018-07-15 19:14:40.986  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:14:40.986  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 19:14:40.987  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:14:40.988  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getChoferes(org.springframework.ui.Model)
+2018-07-15 19:14:40.988  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:14:40.988  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:14:40.989  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 19:14:40.989  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:14:40.989  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:14:40.989  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model)
+2018-07-15 19:14:40.991  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRol(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:14:40.991  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRoles(org.springframework.ui.Model)
+2018-07-15 19:14:40.991  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculos(org.springframework.ui.Model)
+2018-07-15 19:14:40.991  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 19:14:40.993  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 19:14:40.993  INFO 4580 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 19:14:41.009  INFO 4580 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:14:41.009  INFO 4580 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:14:41.031  INFO 4580 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 19:14:41.177  INFO 4580 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 19:14:41.244  INFO 4580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 19:14:41.275  INFO 4580 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 19:14:41.305  INFO 4580 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 19:14:41.308  INFO 4580 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.051 seconds (JVM running for 2.499)
+2018-07-15 19:14:42.663  INFO 4580 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 19:14:42.664  INFO 4580 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 19:14:42.676  INFO 4580 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-07-15 20:44:40.191  INFO 12528 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Starting GeotClientApplication on SORA with PID 12528 (C:\Users\flg\Documents\IntellijIDEA\geot_client\target\classes started by flg in C:\Users\flg\Documents\IntellijIDEA\geot_client)
+2018-07-15 20:44:40.193  INFO 12528 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : No active profile set, falling back to default profiles: default
+2018-07-15 20:44:40.381  INFO 12528 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 20:44:40 CLT 2018]; root of context hierarchy
+2018-07-15 20:44:41.458  INFO 12528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2018-07-15 20:44:41.466  INFO 12528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 20:44:41.467  INFO 12528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-15 20:44:41.535  INFO 12528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 20:44:41.536  INFO 12528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1158 ms
+2018-07-15 20:44:41.646  INFO 12528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 20:44:41.650  INFO 12528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 20:44:41.650  INFO 12528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 20:44:41.651  INFO 12528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 20:44:41.651  INFO 12528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 20:44:41.897  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14292321: startup date [Sun Jul 15 20:44:40 CLT 2018]; root of context hierarchy
+2018-07-15 20:44:41.937  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 20:44:41.938  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/celular],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.CelularController.getCelulares(org.springframework.ui.Model)
+2018-07-15 20:44:41.939  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 20:44:41.940  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chofer],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ChoferController.getChoferes(org.springframework.ui.Model)
+2018-07-15 20:44:41.940  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 20:44:41.940  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cliente],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.ClienteController.getClientes(org.springframework.ui.Model)
+2018-07-15 20:44:41.940  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getByOne(java.lang.String,org.springframework.ui.Model)
+2018-07-15 20:44:41.940  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/empresa],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.EmpresaController.getClientes(org.springframework.ui.Model)
+2018-07-15 20:44:41.940  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 20:44:41.941  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gps],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.GpsController.getGpsList(org.springframework.ui.Model)
+2018-07-15 20:44:41.942  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rol],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.RolController.getRoles(org.springframework.ui.Model)
+2018-07-15 20:44:41.943  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculos(org.springframework.ui.Model)
+2018-07-15 20:44:41.943  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehiculo/{id}],methods=[GET]}" onto public java.lang.String com.ruyo.geotclient.controller.VehiculoController.getVehiculo(java.lang.String,org.springframework.ui.Model)
+2018-07-15 20:44:41.945  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 20:44:41.946  INFO 12528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 20:44:41.968  INFO 12528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 20:44:41.968  INFO 12528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 20:44:41.995  INFO 12528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 20:44:42.164  INFO 12528 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-15 20:44:42.243  INFO 12528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-15 20:44:42.277  INFO 12528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-15 20:44:42.314  INFO 12528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2018-07-15 20:44:42.318  INFO 12528 --- [restartedMain] c.ruyo.geotclient.GeotClientApplication  : Started GeotClientApplication in 2.394 seconds (JVM running for 3.005)
+2018-07-15 20:44:51.249  INFO 12528 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 20:44:51.249  INFO 12528 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 20:44:51.262  INFO 12528 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms

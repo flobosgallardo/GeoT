@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Geot Publico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+</head>
+<body>
+<div class="container">
+    <h2>Chofer de <em th:text="${nombreCliente}"> </em></h2>
+    <a href="/zgeot_publico/cliente">volver a lista de clientes</a>
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Rut</th>
+            <th th:if="${not #lists.isEmpty(vehiculos)}">Vehiculos</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${chofer.getChoferId()}"></td>
+            <td th:text="${chofer.getNombre()}"></td>
+            <td th:text="${chofer.getApellido()}"></td>
+            <td th:text="${chofer.getRut()}"></td>
+            <td th:if="${not #lists.isEmpty(vehiculos)}" >
+                <p th:each="vehiculo : ${vehiculos}">
+                    <a class="button" th:href="${'/zgeot_publico/vehiculo/' + vehiculo.getVehiculoId()}" th:text="${vehiculo.getMarca()}"></a>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

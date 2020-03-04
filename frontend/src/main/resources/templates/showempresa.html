@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Geot Publico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+</head>
+<body>
+<div class="container">
+    <h2>Empresa de <em th:text="${nombreCliente}"> </em></h2>
+    <a href="cliente">volver a lista de clientes</a>
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Rut</th>
+            <th>Nombre</th>
+            <th>Direccion</th>
+            <th>Razonsocial</th>
+            <th>telefono</th>
+            <th th:if="${not #lists.isEmpty(choferes)}">Choferes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${empresa.getEmpresaId()}"></td>
+            <td th:text="${empresa.getRut()}"></td>
+            <td th:text="${empresa.getNombre()}"></td>
+            <td th:text="${empresa.getDireccion()}"></td>
+            <td th:text="${empresa.getRazonsocial()}"></td>
+            <td th:text="${empresa.getTelefono()}"></td>
+            <td th:if="${not #lists.isEmpty(choferes)}" >
+                <p th:each="chofer: ${choferes}">
+                    <a class="button" th:href="${'/zgeot_publico/chofer/' + chofer.getChoferId()}" th:text="${chofer.getNombre()}"></a>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

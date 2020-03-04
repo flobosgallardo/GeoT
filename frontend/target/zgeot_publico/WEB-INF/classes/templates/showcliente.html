@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Geot Publico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+</head>
+<body>
+<div class="container">
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo de cuenta</th>
+            <th th:if="${not #lists.isEmpty(empresas)}">Empresa</th>
+            <th th:if="${not #lists.isEmpty(celulares)}">Celular</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${cliente.getUsuario()}"></td>
+            <td th:text="${cliente.getNombre()}"></td>
+            <td th:text="${cliente.getApellido()}"></td>
+            <td th:text="${rol.getNombre()}"></td>
+            <td th:if="${not #lists.isEmpty(empresas)}" >
+                <p th:each="empresa: ${empresas}">
+                    <a class="button" th:href="'empresa/' + ${empresa.getEmpresaId()}" th:text="${empresa.getNombre()}"></a>
+                </p>
+            </td>
+
+            <td th:if="${not #lists.isEmpty(celulares)}" >
+                <p th:each="celular: ${celulares}">
+                    <a class="button" th:href="'celular/' + ${celular.getCelularId()}" th:text="${celular.getModelo()}"></a>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="/zgeot_publico/cliente">volver a lista de clientes</a>
+</div>
+</body>
+</html>
